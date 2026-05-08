@@ -4,17 +4,13 @@ public:
         if(s.size()!=t.size()){
             return false;
         }
-        vector<int>temp(26,0);
-        for(int i=0;i<s.size();i++){
-            temp[s[i]-'a']++;
-        }
-        for(int i=0;i<t.size();i++){
-            if(temp[t[i]-'a']!=0)
-            temp[t[i]-'a']--;
-            else
-            return false;
-        }
-        
-        return true;
+       unordered_map<string,string>;
+
+       string temp = s;
+       sort(s.begin(),s.end());
+       string temp2 = t;
+       sort(t.begin(),t.end());
+
+       return s==t;
     }
 };
